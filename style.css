@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* VARIABLES */
+/* || RESET */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea{
+    font: inherit;
+}
+
+body.light{
+    /* --BODY-COLOR:  hsl(209, 68%, 40%)  ;
+    --BODY-BGCOLOR:whitesmoke;
+    --NAV-ACTIVE: #566E3D;
+    --NAV-COLOR: whitesmoke;
+    --CAROUSEL-COLOR: #542E71;
+    --BOX-SHADOW-COLOR: #6A66A3;
+    --CARD-COLOR: whitesmoke;
+    --CAROUSEL-HOVER-BGCOLOR:BLACK;
+    --CAROUSEL-HOVER-COLOR: whitesmoke; */
+    --BODY-COLOR:  #0F520B  ;
+    --BODY-BGCOLOR:#E3FFE5;
+    --NAV-ACTIVE: #0F520B;
+    --NAV-COLOR: #0F520B;
+    --CAROUSEL-COLOR: #2E7140;
+    --BOX-SHADOW-COLOR: #0F520B;
+    --CARD-COLOR: whitesmoke;
+    --CAROUSEL-HOVER-BGCOLOR:BLACK;
+    --CAROUSEL-HOVER-COLOR: whitesmoke;
+}
+body.dark {
+    /* --BODY-COLOR: #c5c5c5;
+    --BODY-BGCOLOR:  #333;
+    --NAV-ACTIVE: #6A66A3;
+    --NAV-COLOR: whitesmoke;
+    --CAROUSEL-COLOR: #6A66A3;
+    --BOX-SHADOW-COLOR: #000;
+    --CAROUSEL-HOVER-BGCOLOR:#000;
+    --CAROUSEL-HOVER-COLOR: #f5f5f5; */
+    --BODY-COLOR:  #EDFFEF ;
+    --BODY-BGCOLOR:#041b03;
+    --NAV-ACTIVE: #0F520B;
+    --NAV-COLOR: #EDFFEF;
+    --CAROUSEL-COLOR: #2E7140;
+    --BOX-SHADOW-COLOR: #0F520B;
+    --CARD-COLOR: whitesmoke;
+    --CAROUSEL-HOVER-BGCOLOR:BLACK;
+    --CAROUSEL-HOVER-COLOR: whitesmoke;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    height:100%;
+    background-color: var(--BODY-BGCOLOR);
+    color: var(--BODY-COLOR);
+}
+body.dark img{
+    filter: invert(100%)
+}
+
+#nav1{
+    background-color: var(--BODY-BGCOLOR);
+    justify-content: space-around;
+    padding: 0.2rem;
+    font-weight: 600;
+}
+.nav-item{
+    background-color: var(--BODY-BGCOLOR);
+
+}
+.fixed {
+    background-color: var(--BODY-BGCOLOR);
+}
+.fixedborder{
+    border-bottom: solid var(--BODY-COLOR) thick;
+}
+.nav-item a{
+    color: var(--BODY-COLOR);
+}
+.nav-item a:hover{
+    color:var(--NAV-COLOR);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+.nav-item a:active{
+    color:var(--NAV-ACTIVE);
+}
+#info{
+    margin-top: 5rem;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#head{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* HEADING */
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    border: thick solid var(--BODY-COLOR);
+}
+/* PROJECTS */
+#Projects .col{
+    height: 300px;
+    width: 450px;
+}
+#Projects h3,small{
+ color: var(--BODY-COLOR);
+}
+/* SKILLS */
+.Skills{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.Skills .col{
+    display: flex;
+}
+.Designer{
+    border: var(--BODY-COLOR) solid thick;
+    text-align: center;
+    padding: 2rem 0rem;
+    flex: 1;
+    padding: 16px;
+}
+.Designer h3{
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.circle{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    size: 1rem;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: var(--BODY-COLOR);
+}
+.circle img{
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    color: var(--BODY-BGCOLOR);
+}
+.Designer ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+/* EDUCATION */
+#Education p{
+    padding: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* COURSEWORK */
+#Coursework p{
+    padding: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#Coursework a{
+    text-decoration-thickness: 3px;
+    color: var(--BODY-COLOR);
+}
+hr{
+    border-top: var(--BODY-COLOR) solid thick;
+}
