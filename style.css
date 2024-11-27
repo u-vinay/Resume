@@ -116,6 +116,11 @@ h2{
     font-size: 2.5rem;
     border: thick solid var(--BODY-COLOR);
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 /* PROJECTS */
 #Projects .col{
     height: 300px;
@@ -183,6 +188,8 @@ padding: 0;
     text-decoration-thickness: 3px;
     color: var(--BODY-COLOR);
 }
-hr{
+/* FOOTER */
+footer {
     border-top: var(--BODY-COLOR) solid thick;
+    font-weight: 800;
 }
