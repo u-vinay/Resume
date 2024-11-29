@@ -39,6 +39,8 @@ body.light{
     --CARD-COLOR: whitesmoke;
     --CAROUSEL-HOVER-BGCOLOR:BLACK;
     --CAROUSEL-HOVER-COLOR: whitesmoke;
+    --CARD-BGCOLOR:#041b03;
+    --CARD-COLOR:#E3FFE5;
 }
 body.dark {
     /* --BODY-COLOR: #c5c5c5;
@@ -58,6 +60,8 @@ body.dark {
     --CARD-COLOR: whitesmoke;
     --CAROUSEL-HOVER-BGCOLOR:BLACK;
     --CAROUSEL-HOVER-COLOR: whitesmoke;
+    --CARD-BGCOLOR:#EDFFEF;
+    --CARD-COLOR:#041b03;
 }
 body{
     font-family: 'Nunito', sans-serif;
@@ -222,7 +226,7 @@ footer {
     align-items: center;
     text-align: center;
     transition: opacity 0.3s ease;
-    background-color: var(--BODY-COLOR);
+    background-color: var(--CARD-BGCOLOR);
     height: 300px;
     width: 426px;
   }
@@ -230,21 +234,21 @@ footer {
   /* Make text visible on hover */
   .hover:hover .hover {
     opacity: 1;
-    color: var(--BODY-BGCOLOR);
+    color: var(--CARD-COLOR);
   }
   .btn_website{
     border-radius: 25px;
     background-color: transparent;
     border: solid 2px ;
-    border-color: var(--BODY-BGCOLOR);
+    border-color: var(--CARD-COLOR);
     width: 120px;
     height: 40px;
   }
   .btn_website a{
     margin: auto;
-    color: var(--BODY-BGCOLOR);
+    color: var(--CARD-COLOR);
     text-decoration: none;
   }
   .btn_website svg{
-    fill: var(--BODY-BGCOLOR);
+    fill: var(--CARD-COLOR);
   }
