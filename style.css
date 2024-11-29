@@ -127,7 +127,7 @@ h2{
     width: 450px;
 }
 #Projects h3,small{
- color: var(--BODY-COLOR);
+ color: var(--BODY-BGCOLOR);
 }
 /* SKILLS */
 .Skills{
@@ -193,3 +193,58 @@ footer {
     border-top: var(--BODY-COLOR) solid thick;
     font-weight: 800;
 }
+/* HOVER */
+/* Container holding both the image and text */
+.hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Initially show the image */
+  .hover .unhover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hide the image when hovering */
+  .hover:hover .unhover {
+    opacity: 0;
+  }
+  
+  /* Show the text section on hover */
+  .hover .hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    background-color: var(--BODY-COLOR);
+    height: 300px;
+    width: 426px;
+  }
+  
+  /* Make text visible on hover */
+  .hover:hover .hover {
+    opacity: 1;
+    color: var(--BODY-BGCOLOR);
+  }
+  .btn_website{
+    border-radius: 25px;
+    background-color: transparent;
+    border: solid 2px ;
+    border-color: var(--BODY-BGCOLOR);
+    width: 120px;
+    height: 40px;
+  }
+  .btn_website a{
+    margin: auto;
+    color: var(--BODY-BGCOLOR);
+    text-decoration: none;
+  }
+  .btn_website svg{
+    fill: var(--BODY-BGCOLOR);
+  }
