@@ -8,23 +8,31 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body id="Home" class="light">
-    <nav class="navbar fixed-top fixed fixedborder">
-      <div class="container fluid fixed" id="nav1">
-        
-          <header class="d-flex justify-content-center">
-            <ul class="nav hidden">
-              <li class="nav-item "><a href="#Home" class="nav-link active " aria-current="page ">Home</a></li>
-              <li class="nav-item "><a href="#Projects" class="nav-link">Projects</a></li>
-              <li class="nav-item "><a href="#Skills" class="nav-link ">Skills</a></li>
-              <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
-              <li class="nav-item"><a href="#Coursework" class="nav-link">Coursework</a></li>
-              <li class="nav-item">  <button class="nav-link" onclick="toggleTheme()">
-                <img id="themeIcon" src="light-icon.svg" alt="Theme Icon">
-              </button></li>
-            </ul>
-          </header>
-        </div>
-      </nav>
+      <!-- NAV -->
+        <nav class="navbar  fixed-top fixed fixedborder " id="nav">
+          <div class="container-fluid fixed d-flex"id="nav1" >
+            <header class="d-flex justify-content-center">
+              <ul class="nav hidden" id="myLinks">
+                <li class="nav-item"><a href="#Home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#Coursework" class="nav-link">Certificates</a></li>
+                <li class="nav-item themeIcon">
+                  <button class="nav-link"  onclick="toggleTheme()">
+                    <img id="themeIcon" src="light_mode.svg" style="color: red;" alt="Theme Icon">
+                  </button>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-end ">
+            </header>
+              <button onclick="toggleMenu()" id="hamburger" >
+                  <img src="Hamburger_Menu.svg" alt="Menu">
+              </button>
+          </div>
+          </div>
+        </nav>
+  
       <!-- INFO -->
       <div class="container center" id="info">
         <div>
@@ -33,7 +41,7 @@
         </div>
       </div>
       <!-- PROJECTS -->
-       <div class="container" id="Projects">
+       <div  id="Projects">
             <h2 class="pb-2 ">Projects</h2>
           
             <div class="row row-cols-1 row-cols-lg-2 row-cols-2  g-4 py-5 justify-content-center" >
@@ -80,8 +88,9 @@
             </div>
        </div>
 <!-- SKILLS -->
-    <div class="container" id="Skills">
-        <h2 class="pb-2 ">Skills</h2>
+    <div  id="Skills">
+        <h2 class="pb-2 mb-4">Skills</h2>
+        <div class="container">
         <div class="Skills row row-cols-1 row-cols-lg-2 g-2 g-lg-2">
             <div class="col">
             <div class="Designer">
@@ -136,27 +145,50 @@
             </div>
         </div>
         </div>
+      </div>
     </div>
 <!-- EDUCATION -->
-    <div class="container" id="Education">
-        <h2 class="pb-2 my-5 ">Education</h2>
+    <div class="" id="Education">
+        <h2 class="pb-2">Education</h2>
         <p>B.E in Computer Science</p>
         <p>Impact College of Engineering and Applied Sciences</p>
         <p>Affiliated to VTU</p>
         <p>August 2019 - June 2023</p>
     </div>
 <!-- COURSEWORK -->
-    <div class="container" id="Coursework">
-        <h2 class="pb-2 my-5 ">Coursework</h2>
-        <p>Udemy</p>
-        <p><a href="https://www.udemy.com/certificate/UC-19369084-8337-4c4d-a9dc-76d6973d6f5d/">
-          The Complete 2023 Web Development Bootcamp</a></p> 
-          <p>freeCodeCamp</p>
-        <p><a href="https://www.freecodecamp.org/certification/fccf02af0f9-7f41-4965-8565-f4d21a1aa5fb/responsive-web-design">
-          Responsive Web Design </a></p> 
+    <div class="" id="Coursework">
+        <h2 class="pb-2 my-5 ">Certificates</h2>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-2  g-4 py-5 m-0 justify-content-center" >
+          <div class="col hover unhover ">
+            <!-- Image Section (Visible before hover) -->
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-0 shadow-lg unhover " style="background-image: url('freecodecamp.png'); background-repeat: no-repeat; background-size: cover;">
+            </div>  
+          
+            <!-- Text Section (Visible on hover) -->
+            <div class="d-flex flex-column h-100 p-4 pb-1 card  overflow-hidden rounded-0 shadow-lg hover">
+
+              <h3 class="fw-bold">freeCodeCamp</h3>
+              <p>Responsive Web Design</p>
+                  <button class="btn_website"><a href="https://www.freecodecamp.org/certification/fccf02af0f9-7f41-4965-8565-f4d21a1aa5fb/responsive-web-design" target="_blank">View certificate<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a></button>
+                </div>
+          </div>
+          <div class="col hover unhover ">
+            <!-- Image Section (Visible before hover) -->
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-0 shadow-lg unhover " style="background-image: url('udemy.png'); background-repeat: no-repeat; background-size: cover; object-fit: fill;">
+            </div>  
+          
+            <!-- Text Section (Visible on hover) -->
+            <div class="d-flex flex-column p-4 pb-1 card  overflow-hidden rounded-0 shadow-lg hover">
+
+              <h3 class="fw-bold">Udemy</h3>
+              <p>The Complete 2023 Web Development Bootcamp</p>
+                  <button class="btn_website"><a href="https://www.udemy.com/certificate/UC-19369084-8337-4c4d-a9dc-76d6973d6f5d/" target="_blank">View certificate<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a></button>
+                </div>
+          </div>
+        </div>
     </div>
 <!-- FOOTER -->
- <footer class="p-2">U Vinay, 2024</footer>
+ <footer class="p-2">U Vinay, <span id="year"></span></footer>
        <!-- JAVASCRIPT -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       <script defer>
@@ -171,9 +203,28 @@
         } else {
           body.classList.remove('dark');
           body.classList.add('light');
-          themeIcon.src = 'light-icon.svg'; 
+          themeIcon.src = 'light_mode.svg'; 
         }
       }
+      function toggleMenu() {
+  var x = document.getElementById("myLinks");
+  if (x.classList.contains("hidden")) {
+    // If the class is 'hidden', change it to 'visible'
+    x.classList.remove("hidden");
+    x.classList.add("visible");
+  } else {
+    // If the class is 'visible', change it to 'hidden'
+    x.classList.remove("visible");
+    x.classList.add("hidden");
+  }
+}
+document.querySelectorAll('#myLinks .nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      document.getElementById('myLinks').classList.add('hidden');
+    });
+  });
+
+ 
       </script>
 </body>
 </html>
