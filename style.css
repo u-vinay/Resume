@@ -210,6 +210,9 @@ width: 450px;
 #Coursework button{
     width: 180px;
 }
+#Coursework {
+    padding-top: 1.9rem;
+}
 /* FOOTER */
 footer {
     border-top: var(--BODY-COLOR) solid thick;
@@ -317,6 +320,9 @@ footer {
     }
     h3{
         font-size: 1rem;
+    }
+    #Coursework .card{
+        background-size: 100% 300px;
     }
   }
   @media (max-width: 550px) {
