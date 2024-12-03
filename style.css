@@ -142,6 +142,9 @@ h2{
 #Projects .row{
     margin: 0;
 }
+#Projects .card{
+    background-size: cover;
+}
 /* SKILLS */
 #Skills {
     padding-top: 5rem;
@@ -322,6 +325,9 @@ footer {
         font-size: 1rem;
     }
     #Coursework .card{
+        background-size: 100% 300px;
+    }
+    #Projects .card{
         background-size: 100% 300px;
     }
   }
