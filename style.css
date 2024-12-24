@@ -210,6 +210,9 @@ padding: 0;
 height: 300px;
 width: 450px;
 }
+#Coursework .card{
+    background-size: 100% 300px;
+}
 #Coursework button{
     width: 180px;
 }
